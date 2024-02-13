@@ -5,6 +5,18 @@ function triangleAreaCalculate() {
    const area = 0.5 * triangleBase * triangleHight
    const triangleDisplay = areaDisplay('triangleDisplay', area)
 
+   mainAreaDisplay('Triangle', area)
+
+}
+  
+
+function mainAreaDisplay(name, area){
+    const ol = document.getElementById('area-display')
+    const li = document.createElement('li')
+    const firstAppend = ol.appendChild(li)
+    li.style.fontSize = '20px'
+    li.innerText = `${name} area is: ${area}`
+
 }
 
 

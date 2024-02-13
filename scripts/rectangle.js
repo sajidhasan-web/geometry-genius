@@ -4,6 +4,10 @@ function rectangleAreaCalculate() {
     const rectangleHight = getInputValue('rectangle-hight')
     const area = rectangleWidth * rectangleHight
     const rectangleDisplay = areaDisplay('rectangleDisplay', area) 
+
+    mainAreaDisplay('Rectangle', area)
+
+
  }
 
 
